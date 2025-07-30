@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motos Deportivas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <style>
+    .carousel-item img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0.5rem;
+      border-radius: 0.35rem;
+    }
+    .accordion-button {
+      font-size: 1rem;
+    }
+    .accordion-body {
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container my-5">
+
+    <h1 class="mb-4 text-center">Motos Deportivas</h1>
+
+    <!-- Acordeón-->
+    <div class="accordion" id="accordionMotos">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            ¿Qué son?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMotos">
+          <div class="accordion-body">
+            Las motos deportivas están hechas para ofrecer velocidad agilidad y rendimiento Se destacan por su postura agresiva, aerodinámica y materiales ligeros.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Características principales
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMotos">
+          <div class="accordion-body">
+            Tienen motores potentes (generalmente de 600cc a 1000cc), frenos de alta calidad, suspensiones ajustables y optimizaciones para curvas rápidas y frenadas bruscas.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Modelos ma conocidos
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMotos">
+          <div class="accordion-body">
+            Algunos modelos famosos incluyen la Yamaha R1, Kawasaki Ninja ZX-10R, Suzuki GSX-R1000 y Honda CBR1000RR. Todas ellas son usadas tanto en carretera como en competencias.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrusel con imágenes -->
+    <div id="carouselMotos" class="carousel slide my-4" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Honda.png" class="d-block w-100" alt="Moto deportiva 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Honda CBR1000RR</h5>
+            <p>Una de las motos más rápidas y tecnológicamente avanzadas del mundo.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="r1.png" class="d-block w-100" alt="Moto deportiva 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Yamaha R1</h5>
+            <p>Ideal para circuitos de alta velocidad, con aerodinámica de competición.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ZX-10r.png" class="d-block w-100" alt="Moto deportiva 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kawasaki ZX-10R</h5>
+            <p>Una superbike con caracteristicas entre potencia, manejo y diseño.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMotos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMotos" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
